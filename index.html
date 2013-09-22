@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Div Test</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="js/myProfile.js"></script>
+        <style>
+            .testapp div {
+                height: 100%;
+                display: inline;
+                box-sizing:  border-box;
+                position: absolute;
+                width: 100%;
+                background-color: hsla(20,35%,75%,0.5);
+                overflow: hidden;
+                transition: .4s linear;
+                -webkit-transition: .4s linear; /*safari*/
+                transition-duration: .4s;
+                transition-timing-function: linear;                
+                                
+
+            }
+            div,body {
+                margin: 0;
+                overflow: hidden;
+                 
+                
+            }
+            .testapp div:nth-child(1) {
+                left:  80%;
+                top: 0;
+                width:  100%;
+                z-index: 3;
+                background:  hsla(120,35%,75%,0.5);
+            }
+            .testapp div:nth-child(2) {
+                left:  60%;
+                top: 0;
+                width:  100%;
+                z-index: 2;
+                background:  hsla(160,35%,75%,0.5);
+            }
+            .testapp div:nth-child(3) {
+                left:  10%;
+                top: 5%;
+                height: 250px;
+                width:250px;
+                border-radius: 100%;
+                -webkit-border-radius: 250px;
+                -webkit-border-top-left-radius:250px;
+                -webkit-border-bottom-left-radius:100%;
+                border-radius: 100%;
+                padding: 0;
+                background:  hsla(260,35%,75%,0.5);
+            }
+            .testapp div:nth-child(4) {
+                width: 80%;
+                background:  hsla(260,35%,75%,0.5);
+            }
+            .testapp div:nth-child(5) {
+                width: 100%;
+                left: -95%;
+                background:  hsla(300,35%,75%,0.5);
+            }
+           /* .testapp div:nth-child(5):hover {
+                left: -85%;
+            }
+                */
+            .testapp div:nth-child(1):hover {
+                left: 15%;
+            
+            }
+            .testapp div:nth-child(2):hover {
+                left: 15%;
+            
+            }
+            h1 {
+                margin-top: 100px;
+                padding-top: 70px;
+                transform:rotate(270deg);
+                -ms-transform:rotate(270deg); /* IE 9 */
+                 transition: .4s linear;
+                -webkit-transition: .4s linear; /*safari*/
+                -webkit-transform:rotate(270deg); /* Safari and Chrome */
+            }
+            .h1Hor {
+                 transform:rotate(0deg);
+                -ms-transform:rotate(0deg); /* IE 9 */
+                -webkit-transform:rotate(0deg); /* Safari and Chrome */
+                margin-top: 0px;
+                padding-top: 0px;
+                padding-right: 30px;
+            }
+            #contactdv a {
+                margin-top: 5%;
+                position: relative;
+                margin-left: 85%;
+                left: 5%;
+                box-shadow: 0px 10px 5px black;
+            }
+        </style>
+         
+    </head>
+    <body>
+        <div class="testapp">
+            <div>  </div>
+            <div>  </div>
+            <div> 
+                <img src="images/sg.png"></img>
+                <section style="border: 1px solid black">
+                    sdsd
+                </section>    
+             </div>
+            <div> </div>
+            <div id="contactdv" >
+                <h1 style="color: white;float: right">Contact me</h1>
+                <a href="#"><img src="images/facebook-64-black.png" alt="facebook"></a>
+                <a href="#"><img src="images/twitter-64-black.png" alt="twitter"></a>
+                <a href="#"><img src="images/linkedin-64-black.png" alt="linkedlin"></a>
+                <a href="#"><img src="images/github-64-black.png" alt="github"></a> 
+                <a href="#"><img src="images/email-64-black.png" alt="mail"></a> 
+            </div>
+        </div>
+    </body>
+</html>
